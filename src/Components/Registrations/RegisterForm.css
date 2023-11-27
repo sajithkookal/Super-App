@@ -1,0 +1,102 @@
+#registerFormDiv {
+    background-color: #000;
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#superApp {
+    color: #72DB73;
+    font-family: 'Single Day', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1px;
+}
+
+#createAccount {
+    color: #FFF;
+}
+
+input {
+    margin: 12px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #292929;
+    border: 0 solid red;
+    border-radius: 2px;
+    color: white;
+    outline: none;
+    transition: border 0.3s;
+}
+
+label input[type="checkbox"] {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    margin-left: -8px;
+
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 12px auto;
+    text-align: left;
+    color: #7C7C7C;
+    font-size: .8rem;
+}
+
+button {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 24px;
+    padding: 10px 12px;
+    color: white;
+    background-color: #72db73;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5cb85c;
+}
+
+.errorText {
+    color: #F00;
+    font-size: 12px;
+    width: 90%;
+    max-width: 400px;
+    margin-left: -10px;
+    text-align: left;
+    margin-top: -7px;
+    margin-bottom: 0;
+}
+
+.terms {
+    color: #7C7C7C;
+    max-width: 400px;
+    font-size: .7rem;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 0.36px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 141.7%;
+    font-weight: 500;
+}
+
+span {
+    color: #72DB73;
+}
