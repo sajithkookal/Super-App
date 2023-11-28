@@ -56,7 +56,7 @@ export default function RegisterForm(){
       }
       if (state) {
         window.localStorage.setItem("userData", JSON.stringify(userData));
-        // navigate("/genre");
+         navigate("/genre");
       }
     };
 
