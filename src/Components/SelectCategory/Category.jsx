@@ -24,28 +24,8 @@ const genres = [
     image: <img style={{ width: "160px", height: "120px" }} src={drama} />,
   },
   {
-    id: "Fantasy",
-    color: " #FF4ADE",
-    image: <img style={{ width: "160px", height: "120px" }} src={fantasy} />,
-  },
-  {
-    id: "Fiction",
-    color: "#6CD061",
-    image: <img style={{ width: "160px", height: "120px" }} src={fiction} />,
-  },
-  {
-    id: "Horror",
-    color: "#7358FF",
-    image: <img style={{ width: "160px", height: "120px" }} src={horror} />,
-  },
-  {
-    id: "Music",
-    color: "#E61E32",
-    image: <img style={{ width: "160px", height: "120px" }} src={music} />,
-  },
-  {
     id: "Romance",
-    color: "#11B800",
+    color: "#148A08",
     image: <img style={{ width: "160px", height: "120px" }} src={romance} />,
   },
   {
@@ -55,9 +35,32 @@ const genres = [
   },
   {
     id: "Western",
-    color: "#912500",
+    color: "#902500",
     image: <img style={{ width: "160px", height: "120px" }} src={western} />,
   },
+  {
+    id: "Horror",
+    color: "#7358FF",
+    image: <img style={{ width: "160px", height: "120px" }} src={horror} />,
+  },
+  {
+    id: "Fantasy",
+    color: " #FF4ADE",
+    image: <img style={{ width: "160px", height: "120px" }} src={fantasy} />,
+  },
+   
+  {
+    id: "Music",
+    color: "#E61E32",
+    image: <img style={{ width: "160px", height: "120px" }} src={music} />,
+  },
+  {
+    id: "Fiction",
+    color: "#6CD061",
+    image: <img style={{ width: "160px", height: "120px" }} src={fiction} />,
+  },
+ 
+ 
 ];
 const Category = () => {
   const [categories, setCategories] = useState([]);

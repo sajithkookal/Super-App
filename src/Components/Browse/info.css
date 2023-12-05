@@ -1,0 +1,19 @@
+.userDetailsDiv::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    
+  }
+  
+  .userDetailsDiv::-webkit-scrollbar-thumb {
+    background-color: #9f96f6; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners of the thumb */
+  }
+  
+  .userDetailsDiv::-webkit-scrollbar-track {
+    background-color: #5746EA; /* Color of the scrollbar track */
+  }
+  
+  /* For Firefox */
+  .userDetailsDiv {
+    scrollbar-width: thin;
+    scrollbar-color: #f0ebeb #5746EA; /* Thumb and track colors */
+  }

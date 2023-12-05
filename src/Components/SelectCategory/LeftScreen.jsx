@@ -13,7 +13,7 @@ const LeftScreen = ({ color, id, setCategories, categories }) => {
             style={{
               background: `${color}`,
               borderRadius: "12px",
-              width: "100px",
+              width: "110px",
               color: "white",
               border: "none",
               padding: "6px",
