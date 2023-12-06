@@ -3,6 +3,7 @@ import './App.css';
 import Registration from './pages/Registration'
 import Genre from './pages/Genre';
 import Browse from './pages/Browse';
+import Movies from './pages/Movies'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route exact path='/register' element={<Registration />} />
           <Route exact path='/genre' element={<Genre />} />
           <Route exact path='/browse' element={<Browse />} />
+          <Route exact path='/movies' element={<Movies />} />
         </Routes>
       </BrowserRouter>
 
