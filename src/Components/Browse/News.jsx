@@ -4,17 +4,18 @@ const News = () => {
   const [news, setNews] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
-  console.log(news);
+ 
   useEffect(() => {
     const fetchNews = async () => {
       await fetch(
-        "https://newsapi.org/v2/everything?q=tesla&from=2024-02-29&sortBy=publishedAt&apiKey=572f4d2dc96e42519d4c8861c0534d88"
+        "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=572f4d2dc96e42519d4c8861c0534d88"
       )
         .then(async (data) => await data.json())
-        .then((res) => setNews(res.articles[0]));
+        .then((data) => setNews(data.articles[0]));
     };
     fetchNews();
   }, []);
+
   useEffect(() => {
     const date = new Date();
     var hours = date.getHours();

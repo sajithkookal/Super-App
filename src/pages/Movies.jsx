@@ -56,8 +56,8 @@ const Movies = () => {
             <p style={{ color: "white", fontSize: "1.5rem", margin: "2vw", marginLeft: "4vw" }}>
                 Entertainment according to your choice
             </p>
-            {movies.map((movie) => (
-                <List genre={movie} />
+            {movies.map((movie,idx) => (
+                <List genre={movie} key={idx}/>
             ))}
         </div>
 

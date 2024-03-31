@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./List.module.css";
 const List = ({ genre }) => {
   const [movies, setMovies] = useState([]);
-  console.log(movies);
+  
   useEffect(() => {
     const options = {
       method: "GET",
