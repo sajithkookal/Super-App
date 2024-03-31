@@ -8,7 +8,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       await fetch(
-        "https://newsapi.org/v2/top-headlines?country=in&category=business&domains=vercel.com&apiKey=572f4d2dc96e42519d4c8861c0534d88"
+        "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=572f4d2dc96e42519d4c8861c0534d88"
       )
         .then(async (data) => await data.json())
         .then((data) => setNews(data.articles[0]));
