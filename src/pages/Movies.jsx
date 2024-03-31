@@ -2,10 +2,23 @@ import List from "../Components/Movies/List";
 import Profile from "../assets/profileSmall.png";
 import styles from "../Components/Movies/List.module.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Movies = () => {
-    const movies = JSON.parse(window.localStorage.getItem("genres"));
+    
     const navigate = useNavigate();
+    useEffect(()=>{
+        let info = JSON.parse(window.localStorage.getItem("userData"));
+        if(!info){
+          navigate("/register");
+          return;
+        }
+      },[]);
+      const movies = JSON.parse(window.localStorage.getItem("genres"));
+      if(!movies){
+        navigate("/genre");
+        return;
+      }
     const handleClick = () => {
         navigate("/browse");
       };

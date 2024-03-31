@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CategoryList from "./Categorylist";
 import LeftScreen from "./LeftScreen"
 import styles from "./Category.module.css";
@@ -65,8 +65,17 @@ const genres = [
 const Category = () => {
   const [categories, setCategories] = useState([]);
   const [lengthError, setLengthError] = useState(false);
-
   const navigate = useNavigate();
+
+  useEffect(()=>{
+    let info = JSON.parse(window.localStorage.getItem("userData"));
+    if(!info){
+      return navigate("/register");
+    }
+  });
+ 
+  
+  
   const handleSignUp = () => {
     if (categories.length < 3) {
       setLengthError(true);

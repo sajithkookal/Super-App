@@ -31,11 +31,12 @@ const Notes = () => {
           height: "40vh",
           margin: "auto",
           border: "none",
+          resize:"none",
           background: "transparent",
           outline: 0,
     
         }}
-        value={text}
+        value={text? text :''}
         onChange={(e) => handleChange(e)}
       />
    

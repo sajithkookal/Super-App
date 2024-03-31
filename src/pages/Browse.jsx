@@ -4,9 +4,18 @@ import Notes from "../Components/Browse/Notes";
 import News from "../Components/Browse/News";
 import Timer from "../Components/Browse/Timer";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Browse = () => {
   const navigate = useNavigate();
+  
+  useEffect(()=>{
+    let info = JSON.parse(window.localStorage.getItem("userData"));
+    if(!info){
+      navigate('/register');
+      return;
+    }
+  },[]);
   const handleClick = () => {
     navigate("/movies");
   };
